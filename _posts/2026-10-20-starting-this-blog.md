@@ -11,9 +11,10 @@ Equations work inline, like the GG02 mutual information $$I_{AB} = \tfrac12 \log
 $$
 K = \beta\, I_{AB} - \chi_{BE}.
 $$
-Yeah it's pretty simple nowadays when you have an assistant.
-Code blocks work too:
 
+Yeah it's pretty simple nowadays when you have an assistant.
+
+Code blocks work too:
 ```python
 import numpy as np
 snr = 10 ** (-3 / 10)          # -3 dB
