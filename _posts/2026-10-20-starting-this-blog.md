@@ -22,3 +22,4 @@ print(0.5 * np.log2(1 + snr))  # bits per channel use
 ```
 
 
+In my opinion Quantum Algo research is vast and I have clearly picked up good resources.
