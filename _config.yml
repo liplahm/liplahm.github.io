@@ -2,7 +2,7 @@
 #  Site settings — edit these, then push. GitHub Pages rebuilds.
 # ---------------------------------------------------------------
 title: "Shadab"                     # shown in the browser tab
-name: "Shadab"                      # your name as it appears on the page (add your surname here)
+name: "Shadab Anjum"                      # your name as it appears on the page (add your surname here)
 tagline: "Quantum information · Machine learning · Signal processing"
 description: "Research homepage and blog of Shadab: quantum key distribution, deep unfolding and signal processing."
 email: "shadabanjum022@gmail.com"
