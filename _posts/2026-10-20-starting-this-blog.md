@@ -19,3 +19,5 @@ import numpy as np
 snr = 10 ** (-3 / 10)          # -3 dB
 print(0.5 * np.log2(1 + snr))  # bits per channel use
 ```
+
+Yeah it's pretty simple nowadays when you have an assistant.
