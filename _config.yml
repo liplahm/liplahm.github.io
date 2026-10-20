@@ -11,7 +11,7 @@ scholar: ""                         # Google Scholar URL (leave empty to hide)
 linkedin: ""                        # LinkedIn URL (leave empty to hide)
 orcid: ""                           # ORCID URL (leave empty to hide)
 cv_pdf: ""                          # e.g. /assets/files/cv.pdf after you upload it (empty hides the link)
-photo: "/assets/profile.jpg"                          # e.g. /assets/img/profile.jpg after you upload it (empty shows initials)
+photo: "/assets/css/profile.jpg"                          # e.g. /assets/img/profile.jpg after you upload it (empty shows initials)
 office: "Centre for Applied Research in Electronics (CARE), IIT Delhi, Hauz Khas, New Delhi 110016"
 
 # For a site at https://liplahm.github.io keep url as below and baseurl empty.
