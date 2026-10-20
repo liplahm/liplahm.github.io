@@ -1,0 +1,23 @@
+---
+layout: default
+title: Blog
+---
+<section class="blog-head">
+  <h1>Blog</h1>
+  <p class="muted">Notes on quantum communication, coding theory, learning algorithms and whatever I am reading. <a href="{{ '/blog/feed.xml' | relative_url }}">RSS</a></p>
+</section>
+{% if site.posts.size > 0 %}
+<ul class="post-index">
+  {% for post in site.posts %}
+  <li>
+    <time class="mono" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
+    <div>
+      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% if post.summary %}<p class="muted">{{ post.summary }}</p>{% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="muted">No posts yet. Add a Markdown file to the <span class="mono">_posts</span> folder to publish the first one.</p>
+{% endif %}

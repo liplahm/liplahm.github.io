@@ -1,0 +1,34 @@
+# Papers and manuscripts. Newest first.
+# Fields: title, authors, venue, status, year, pdf, arxiv, code (leave any empty to hide)
+- title: "Coupling-Aware Off-Grid Joint Range–Velocity–Angle Estimation of Multiple Targets With SIMO-FMCW Radar"
+  authors: "Shadab"                # add co-authors
+  venue: ""
+  status: "Manuscript in preparation"
+  year: 2026
+  pdf: ""
+  arxiv: ""
+  code: ""
+- title: "Orienting the Code: Asymmetric CSS Encodings for All-Photonic One-Way Quantum Repeaters"
+  authors: "Shadab"                # add co-authors
+  venue: ""
+  status: "To be submitted"
+  year: 2026
+  pdf: ""
+  arxiv: ""
+  code: ""
+- title: "Rate-Matching the Magic-State Supply Chain of Early Fault-Tolerant Bicycle Architectures"
+  authors: "Shadab"                # add co-authors
+  venue: ""
+  status: "To be submitted"
+  year: 2026
+  pdf: ""
+  arxiv: ""
+  code: ""
+- title: "Neural min-sum LDPC decoding for CV-QKD information reconciliation (working title)"
+  authors: "Shadab"                # add co-authors
+  venue: ""
+  status: "Manuscript in preparation"
+  year: 2026
+  pdf: ""
+  arxiv: ""
+  code: ""

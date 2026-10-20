@@ -1,0 +1,17 @@
+# Projects. Fields: title, summary, tags (list), code, link
+- title: "Interactive GG02 CV-QKD simulator"
+  summary: "End-to-end simulation of the GG02 protocol, from Gaussian modulation and homodyne/heterodyne detection to parameter estimation and secret key rate, with a GUI that exposes every parameter. Poster at IIT Delhi Open House 2026."
+  tags: [CV-QKD, Python, Tkinter]
+  code: ""
+- title: "Multilevel CV-QKD reconciliation stack"
+  summary: "Sliced error correction (Van Assche–Cardinal–Cerf) combined with syndrome-based LDPC decoding (Liveris et al.) in a four-slice multistage decoder; irregular LDPC codes built by PEG with density-evolution-optimised degree distributions."
+  tags: [Reconciliation, LDPC, Belief propagation]
+  code: ""
+- title: "Neural min-sum LDPC decoder"
+  summary: "Deep-unfolded min-sum decoder with learnable check- and variable-node weights, trained over a mixed-SNR range of −7 to −1 dB for low-SNR CV-QKD reconciliation."
+  tags: [Deep unfolding, TensorFlow]
+  code: ""
+- title: "PQC-authenticated QKD post-processing testbed"
+  summary: "Raspberry Pi nodes linked over LoRa: the classical channel is first authenticated with post-quantum signatures and key encapsulation (ML-DSA, ML-KEM), then GG02 sifting, parameter estimation and syndrome exchange run over it."
+  tags: [Post-quantum cryptography, Hardware]
+  code: ""

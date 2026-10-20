@@ -1,0 +1,10 @@
+# Technical notes and reading reports. Fields: title, about, pdf
+- title: "p-mean regret for stochastic bandits"
+  about: "Report on Krishna et al., AAAI 2025"
+  pdf: ""
+- title: "Group-fair matchings with convex cost functions"
+  about: "Report on Panda et al., AAAI 2026"
+  pdf: ""
+- title: "The CRYSTALS-Kyber key encapsulation mechanism"
+  about: "Report on the Kyber KEM"
+  pdf: ""
