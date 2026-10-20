@@ -15,6 +15,11 @@ $$
 Yeah it's pretty simple nowadays when you have an assistant.
 
 Code blocks work too:
+
+
+In my opinion Quantum Algo research is vast and I have clearly picked up good resources.
+
+
 ```python
 import numpy as np
 snr = 10 ** (-3 / 10)          # -3 dB
@@ -22,4 +27,4 @@ print(0.5 * np.log2(1 + snr))  # bits per channel use
 ```
 
 
-In my opinion Quantum Algo research is vast and I have clearly picked up good resources.
+
