@@ -1,0 +1,100 @@
+---
+layout: default
+---
+<section class="intro">
+  <div class="intro-text">
+    <h1 class="name">{{ site.name }}</h1>
+    <p class="tagline">{{ site.tagline }}</p>
+    <p>I am a research intern at the Centre for Applied Research in Electronics (CARE), IIT Delhi, working on quantum communication in a programme funded by CDOT, IIT Madras. My research sits between <strong>quantum information theory</strong> and <strong>machine learning</strong>, with a focus on deep unfolding and graph-based algorithms, for example in information reconciliation for continuous-variable quantum key distribution.</p>
+    <p>I completed my M.Sc. in Physics at IIT Delhi, with a thesis on machine-learning-based post-processing of CV-QKD advised by Prof. Neel Kanth Kundu and Prof. Bhaskar Kanseri, and a B.Tech. in Engineering Physics at IIT Bombay (2024). I am currently applying for PhD positions in machine learning, algorithms and quantum information.</p>
+  </div>
+  <figure class="portrait">
+    {% if site.photo != "" %}
+      <img src="{{ site.photo | relative_url }}" alt="Photo of {{ site.name }}" width="168" height="168">
+    {% else %}
+      <span class="initials" aria-hidden="true">{{ site.name | slice: 0 }}</span>
+    {% endif %}
+  </figure>
+</section>
+
+<section class="contact" aria-label="Contact">
+  <dl>
+    <div><dt>Email</dt><dd><span class="mono">{{ site.email }}</span></dd></div>
+    <div><dt>Office</dt><dd>{{ site.office }}</dd></div>
+    <div><dt>Elsewhere</dt><dd class="links">
+      <a href="https://github.com/{{ site.github }}">GitHub</a>
+      {% if site.scholar != "" %}<a href="{{ site.scholar }}">Google Scholar</a>{% endif %}
+      {% if site.orcid != "" %}<a href="{{ site.orcid }}">ORCID</a>{% endif %}
+      {% if site.linkedin != "" %}<a href="{{ site.linkedin }}">LinkedIn</a>{% endif %}
+      {% if site.cv_pdf != "" %}<a href="{{ site.cv_pdf | relative_url }}">CV (PDF)</a>{% endif %}
+    </dd></div>
+  </dl>
+</section>
+
+<section id="research">
+  <h2>Research interests</h2>
+  <ul class="interests">
+    <li><strong>QKD post-processing:</strong> information reconciliation, syndrome-based LDPC decoding, composable finite-size security for GG02.</li>
+    <li><strong>Learned iterative algorithms:</strong> deep unfolding of belief propagation and min-sum decoders.</li>
+    <li><strong>Quantum networks and fault tolerance:</strong> one-way quantum repeaters, CSS codes, magic-state supply.</li>
+    <li><strong>Radar signal processing:</strong> off-grid joint range, velocity and angle estimation with FMCW arrays.</li>
+  </ul>
+</section>
+
+<section id="papers">
+  <h2>Papers and manuscripts</h2>
+  <ol class="pubs">
+  {% for p in site.data.papers %}
+    <li>
+      <span class="pub-title">{% if p.pdf != "" %}<a href="{{ p.pdf | relative_url }}">{{ p.title }}</a>{% elsif p.arxiv != "" %}<a href="{{ p.arxiv }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</span>
+      <span class="pub-authors">{{ p.authors }}</span>
+      <span class="pub-venue">{% if p.venue != "" %}<em>{{ p.venue }}</em>, {% endif %}{{ p.year }}{% if p.status != "" %} <span class="status">{{ p.status }}</span>{% endif %}</span>
+      {% if p.pdf != "" or p.arxiv != "" or p.code != "" %}<span class="pub-links">{% if p.pdf != "" %}<a href="{{ p.pdf | relative_url }}">pdf</a>{% endif %}{% if p.arxiv != "" %}<a href="{{ p.arxiv }}">arXiv</a>{% endif %}{% if p.code != "" %}<a href="{{ p.code }}">code</a>{% endif %}</span>{% endif %}
+    </li>
+  {% endfor %}
+  </ol>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+  {% for pr in site.data.projects %}
+    <article class="project">
+      <h3>{% if pr.code != "" %}<a href="{{ pr.code }}">{{ pr.title }}</a>{% else %}{{ pr.title }}{% endif %}</h3>
+      <p>{{ pr.summary }}</p>
+      <p class="tags">{% for t in pr.tags %}<span>{{ t }}</span>{% endfor %}</p>
+    </article>
+  {% endfor %}
+  </div>
+</section>
+
+<section id="notes">
+  <h2>Notes and reports</h2>
+  <ul class="notes">
+  {% for n in site.data.notes %}
+    <li>{% if n.pdf != "" %}<a href="{{ n.pdf | relative_url }}">{{ n.title }}</a>{% else %}{{ n.title }}{% endif %} <span class="muted">· {{ n.about }}</span></li>
+  {% endfor %}
+  </ul>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul class="edu">
+    <li><span class="edu-what"><strong>M.Sc. Physics</strong>, Indian Institute of Technology Delhi</span><span class="muted">Thesis: Machine Learning Based Post-Processing of Continuous Variable Quantum Key Distribution</span></li>
+    <li><span class="edu-what"><strong>B.Tech. Engineering Physics</strong>, Indian Institute of Technology Bombay</span><span class="muted mono">2024</span></li>
+  </ul>
+</section>
+
+<section id="latest">
+  <h2>From the blog</h2>
+  {% if site.posts.size > 0 %}
+  <ul class="post-list">
+    {% for post in site.posts limit: 3 %}
+    <li><time class="mono" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time> <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <p><a href="{{ '/blog/' | relative_url }}">All posts →</a></p>
+  {% else %}
+  <p class="muted">No posts yet.</p>
+  {% endif %}
+</section>

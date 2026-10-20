@@ -1,0 +1,33 @@
+# ---------------------------------------------------------------
+#  Site settings — edit these, then push. GitHub Pages rebuilds.
+# ---------------------------------------------------------------
+title: "Shadab"                     # shown in the browser tab
+name: "Shadab"                      # your name as it appears on the page (add your surname here)
+tagline: "Quantum information · Machine learning · Signal processing"
+description: "Research homepage and blog of Shadab: quantum key distribution, deep unfolding and signal processing."
+email: "shadabanjum022@gmail.com"
+github: "liplahm"
+scholar: ""                         # Google Scholar URL (leave empty to hide)
+linkedin: ""                        # LinkedIn URL (leave empty to hide)
+orcid: ""                           # ORCID URL (leave empty to hide)
+cv_pdf: ""                          # e.g. /assets/files/cv.pdf after you upload it (empty hides the link)
+photo: ""                           # e.g. /assets/img/profile.jpg after you upload it (empty shows initials)
+office: "Centre for Applied Research in Electronics (CARE), IIT Delhi, Hauz Khas, New Delhi 110016"
+
+# For a site at https://liplahm.github.io keep url as below and baseurl empty.
+url: "https://liplahm.github.io"
+baseurl: ""
+
+permalink: /blog/:year/:month/:title/
+timezone: Asia/Kolkata
+markdown: kramdown
+kramdown:
+  math_engine: mathjax              # $$...$$ becomes maths (inline or display); MathJax renders it
+defaults:
+  - scope: { path: "", type: "posts" }
+    values: { layout: "post", math: true }
+plugins:
+  - jekyll-feed
+feed:
+  path: blog/feed.xml
+exclude: [README.md, Gemfile, Gemfile.lock, preview_build.py]
