@@ -1,0 +1,31 @@
+---
+layout: default
+title: Paper reviews
+body_class: reviews-page
+---
+<section class="reviews-head">
+  <h1>Paper reviews</h1>
+  <p>Notes and critical reviews of papers I have read closely. Click the title or the PDF icon for my review; the second icon links to the original paper.</p>
+</section>
+
+<hr class="reviews-rule">
+
+{% if site.data.reviews.size > 0 %}
+<ul class="reviews">
+  {% for r in site.data.reviews %}
+  <li>
+    <span class="rev-icons">
+      <a href="{{ r.review | relative_url }}" title="My review (PDF)"><img src="{{ '/assets/img/icon-pdf.svg' | relative_url }}" alt="Review PDF" width="26" height="28"></a>
+      {% if r.paper and r.paper != "" %}<a href="{{ r.paper }}" title="Original paper"><img src="{{ '/assets/img/icon-paper.svg' | relative_url }}" alt="Original paper" width="26" height="28"></a>{% endif %}
+    </span>
+    <span class="rev-text">
+      <a class="rev-title" href="{{ r.review | relative_url }}">{{ r.title }}</a><br>
+      by {{ r.authors }}<br>
+      {% if r.venue and r.venue != "" %}<em>{{ r.venue }}</em> {% endif %}({{ r.year }}){% if r.date %} · <span class="rev-date">reviewed {{ r.date | date: "%d %b %Y" }}</span>{% endif %}
+    </span>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No reviews yet.</p>
+{% endif %}

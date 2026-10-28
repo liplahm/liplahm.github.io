@@ -1,0 +1,17 @@
+# Paper reviews. Newest first.
+# To add one: put your review PDF in /assets/reviews/ and add an entry below.
+# Fields:
+#   title     — title of the paper you reviewed
+#   authors   — the paper's authors (shown as "by ...")
+#   venue     — journal / conference (shown in italics; leave "" to hide)
+#   year      — publication year of the paper
+#   review    — path to YOUR review PDF in this repo (the PDF icon + title link)
+#   paper     — link to the original paper (arXiv / DOI); "" hides the second icon
+#   date      — when you wrote the review (YYYY-MM-DD)
+- title: "Continuous Variable Quantum Cryptography Using Coherent States"
+  authors: "Frédéric Grosshans, Philippe Grangier"
+  venue: "Physical Review Letters 88, 057902"
+  year: 2002
+  review: "/assets/reviews/2026-10-28-gg02-review.pdf"
+  paper: "https://arxiv.org/abs/quant-ph/0109084"
+  date: 2026-10-28

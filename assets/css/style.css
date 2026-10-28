@@ -161,3 +161,37 @@ mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; padding: 0
 .foot-links a { color: var(--muted); }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* ---------------------------------------------------------------
+   Paper reviews page: old-school faculty-page look
+   (aqua background, plain sans text, classic blue / purple links)
+   --------------------------------------------------------------- */
+body.reviews-page {
+  --rv-bg: #a6ffff; --rv-fg: #000; --rv-link: #0000ee; --rv-visited: #551a8b; --rv-rule: #7fb8b8;
+  background: var(--rv-bg); color: var(--rv-fg);
+  font: 400 1rem/1.35 Arial, Helvetica, sans-serif; color-scheme: light;
+}
+.reviews-page .wrap { max-width: 64rem; }
+.reviews-page .site-head { border-bottom-color: var(--rv-rule); }
+.reviews-page .site-name { color: #000; }
+.reviews-page .site-nav a { color: var(--rv-link); }
+.reviews-page .site-nav a[aria-current="page"] { color: #000; font-weight: 600; }
+.reviews-page a { color: var(--rv-link); text-decoration: none; }
+.reviews-page a:visited { color: var(--rv-visited); }
+.reviews-page a:hover { text-decoration: underline; }
+.reviews-page .site-foot, .reviews-page .foot-links a { color: #333; border-top-color: var(--rv-rule); }
+.reviews-head { margin-top: 0; }
+.reviews-head h1 { font: 700 2rem/1.2 Arial, Helvetica, sans-serif; margin: 0 0 0.8rem; }
+.reviews-head p { margin: 0; }
+.reviews-rule { border: 0; border-top: 1px solid var(--rv-rule); margin: 1rem 0 1.6rem; }
+.reviews { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.1rem; }
+.reviews li { display: flex; align-items: center; gap: 0.9rem; }
+.rev-icons { display: flex; gap: 0.7rem; flex: none; }
+.rev-icons img { display: block; }
+.rev-text { min-width: 0; overflow-wrap: anywhere; }
+.rev-title { font-weight: 700; font-size: 1.12rem; }
+.rev-date { color: #333; }
+@media (max-width: 480px) {
+  .reviews li { align-items: flex-start; }
+  .rev-icons { flex-direction: column; gap: 0.4rem; }
+}
