@@ -8,8 +8,8 @@
 #   review    — path to YOUR review PDF in this repo (the PDF icon + title link)
 #   paper     — link to the original paper (arXiv / DOI); "" hides the second icon
 #   date      — when you wrote the review (YYYY-MM-DD)
-- title: "Continuous Variable Quantum Cryptography Using Coherent States"
-  authors: "Frédéric Grosshans, Philippe Grangier"
+- title: "A Mathematical theory of Communication"
+  authors: "Shannon"
   venue: "Physical Review Letters 88, 057902"
   year: 2002
   review: "/assets/reviews/a-mathematical-theory-of-communication-1948.pdf"
